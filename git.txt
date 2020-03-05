@@ -1,0 +1,14 @@
+- git init: create git on project.
+    1. untracked files
+    2. unstaged files
+    3. staged files
+    4. committed files
+
+ssh-keygen -t rsa -b 4096 -C "phuthiendang@gmail.com"
+ls -a ~/.ssh
+eval "$(ssh-agent -s)"
+top
+ssh-add ~/.ssh/id_rsa 
+pbcopy < ~/.ssh/id_rsa.pub
+
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDtF3Ts6Qc0Ys5a07Y7OI6g5pz3GfxL0IFkzaA3LV3xM7DBRwomG6OdTdhB6om+jQD7QyoDKM993R7nJRFjqjRmK2CqoJBYK0bRXsJvB39fgNUmgUed0uVxFFMnXsNkp2rugUjZx5HZ6kbJQV3QrAmbZwtT22cx2QfZNNxSYfoc68kKokVU7PPQkI1J4rH5njgVRYeyB4JiVb0EJowklBCf3LbbVOyUHqifT2+ahpzu0Zxv/gIRdyNPGc6n4CzW0Fccc3x5mvLLgZpT04jRf4cXIOcprKjMpKthLLj/lm+0GyNhJKx4lf610uNVKZjRKVxTQi4EIQInqkwJntijmkUlD3dPGuvXUlga2XErZJhXCd1IYKsrbFh8vi/n+75i/g9xRtAbVV2ABj5HE+0Qz40dLLM9Rd/p8jutmxUGE/f5Ih7QRWOnf+14VIj0uZqA4/b7aJtoigJRdNbpNmY4tl+9rB39Og4hKZPJDbkMugzTDa0oivKg4UU/73Jh9PxfPogfTiNGsVGH6tOFb91L42++HcQ9oiSmUDJmBtNRTzyH8oUnGUwJo4A70HnRMYVQ1m0492v/mwsXfMF6GG4/Pl8A5pD9b3NSoKL7ik1MRILaMLlpdWWXzjvPYhruHjWzhNEZ+Bdr8g70DjixXgrI+x+KL+jwC3WhqTeAkEAZCv5WjQ== phuthiendang@gmail.com

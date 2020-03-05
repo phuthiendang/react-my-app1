@@ -66,3 +66,38 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `yarn build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+const editExpense = (id, updates) => {
+  return {
+    type: 'EDIT_EXPENSE',
+    id,
+    updates
+  }
+};
+
+const setTextFilter = (text = '') => {
+  return {
+    type: 'SET_TEXT_FILTER',
+    text
+  }
+}
+
+case 'EDIT_EXPENSE':
+        return state.map((exp) => {
+          if(exp.id === action.id) {
+            return {
+              ...exp,
+              ...action.updates
+            }
+          }else {
+            return exp;
+          }
+        })
+
+    case 'SET_TEXT_FILTER':
+return {...state, text: action.text}
+
+store.dispatch(editExpense(two.expense.id, { amount: 20000 }));
+store.dispatch(setTextFilter('house'));
+store.dispatch(setTextFilter());

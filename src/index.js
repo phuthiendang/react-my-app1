@@ -1,12 +1,27 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import * as serviceWorker from "./serviceWorker";
+/*
+const Info = props => {
+  return (
+    <div>
+      <p>Username: {props.username}</p>
+    </div>
+  );
+};
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const isAdmin = WrappedComponent => {
+  return props => (
+    <div>
+      {props.isAdmin && <p>Welcome: Admin</p>}
+      <WrappedComponent {...props} />
+    </div>
+  );
+};
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
+const Result = isAdmin(Info);
+*/
+ReactDOM.render(<App />, document.getElementById("root"));
 serviceWorker.unregister();
